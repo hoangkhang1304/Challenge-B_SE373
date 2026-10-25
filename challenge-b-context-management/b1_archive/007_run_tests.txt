@@ -1,0 +1,1131 @@
+PASS auth.test.ts > case_000 (21ms)
+  [db] pool conn=5 query=7ms rows=41
+  [http] GET /v1/auth/50 200 11ms
+PASS session.test.ts > case_001 (35ms)
+  [db] pool conn=4 query=6ms rows=37
+PASS users.test.ts > case_002 (4ms)
+  [db] pool conn=17 query=4ms rows=2
+PASS orders.test.ts > case_003 (6ms)
+  [db] pool conn=14 query=7ms rows=4
+  [http] GET /v1/orders/247 200 13ms
+PASS billing.test.ts > case_004 (36ms)
+  [db] pool conn=14 query=1ms rows=36
+PASS search.test.ts > case_005 (8ms)
+  [db] pool conn=8 query=1ms rows=36
+PASS profile.test.ts > case_006 (38ms)
+  [db] pool conn=13 query=1ms rows=14
+  [http] GET /v1/profile/48 200 73ms
+PASS admin.test.ts > case_007 (9ms)
+  [db] pool conn=10 query=7ms rows=9
+PASS notify.test.ts > case_008 (35ms)
+  [db] pool conn=4 query=5ms rows=35
+PASS audit.test.ts > case_009 (12ms)
+  [db] pool conn=4 query=4ms rows=23
+  [http] GET /v1/audit/100 200 72ms
+PASS auth.test.ts > case_010 (5ms)
+  [db] pool conn=19 query=1ms rows=39
+PASS session.test.ts > case_011 (14ms)
+  [db] pool conn=16 query=9ms rows=27
+PASS users.test.ts > case_012 (21ms)
+  [db] pool conn=15 query=8ms rows=23
+  [http] GET /v1/users/307 200 33ms
+PASS orders.test.ts > case_013 (12ms)
+  [db] pool conn=8 query=2ms rows=36
+PASS billing.test.ts > case_014 (20ms)
+  [db] pool conn=17 query=8ms rows=21
+PASS search.test.ts > case_015 (29ms)
+  [db] pool conn=10 query=2ms rows=7
+  [http] GET /v1/search/525 200 55ms
+PASS profile.test.ts > case_016 (11ms)
+  [db] pool conn=11 query=3ms rows=31
+PASS admin.test.ts > case_017 (27ms)
+  [db] pool conn=2 query=2ms rows=48
+PASS notify.test.ts > case_018 (36ms)
+  [db] pool conn=19 query=6ms rows=21
+  [http] GET /v1/notify/712 200 46ms
+PASS audit.test.ts > case_019 (39ms)
+  [db] pool conn=16 query=8ms rows=4
+PASS auth.test.ts > case_020 (6ms)
+  [db] pool conn=9 query=8ms rows=44
+PASS session.test.ts > case_021 (5ms)
+  [db] pool conn=2 query=5ms rows=41
+  [http] GET /v1/session/592 200 89ms
+PASS users.test.ts > case_022 (29ms)
+  [db] pool conn=10 query=7ms rows=42
+PASS orders.test.ts > case_023 (23ms)
+  [db] pool conn=1 query=8ms rows=22
+PASS billing.test.ts > case_024 (11ms)
+  [db] pool conn=20 query=2ms rows=31
+  [http] GET /v1/billing/61 200 29ms
+PASS search.test.ts > case_025 (19ms)
+  [db] pool conn=5 query=4ms rows=25
+PASS profile.test.ts > case_026 (26ms)
+  [db] pool conn=16 query=2ms rows=10
+PASS admin.test.ts > case_027 (29ms)
+  [db] pool conn=13 query=9ms rows=17
+  [http] GET /v1/admin/905 200 19ms
+PASS notify.test.ts > case_028 (28ms)
+  [db] pool conn=18 query=5ms rows=45
+PASS audit.test.ts > case_029 (27ms)
+  [db] pool conn=12 query=7ms rows=14
+PASS auth.test.ts > case_030 (10ms)
+  [db] pool conn=3 query=3ms rows=9
+  [http] GET /v1/auth/238 200 86ms
+PASS session.test.ts > case_031 (15ms)
+  [db] pool conn=1 query=8ms rows=37
+PASS users.test.ts > case_032 (12ms)
+  [db] pool conn=9 query=5ms rows=0
+PASS orders.test.ts > case_033 (10ms)
+  [db] pool conn=14 query=9ms rows=23
+  [http] GET /v1/orders/625 200 74ms
+PASS billing.test.ts > case_034 (21ms)
+  [db] pool conn=5 query=9ms rows=39
+PASS search.test.ts > case_035 (4ms)
+  [db] pool conn=15 query=9ms rows=25
+PASS profile.test.ts > case_036 (26ms)
+  [db] pool conn=13 query=7ms rows=6
+  [http] GET /v1/profile/494 200 83ms
+PASS admin.test.ts > case_037 (26ms)
+  [db] pool conn=2 query=4ms rows=4
+PASS notify.test.ts > case_038 (14ms)
+  [db] pool conn=15 query=3ms rows=7
+PASS audit.test.ts > case_039 (22ms)
+  [db] pool conn=20 query=1ms rows=6
+  [http] GET /v1/audit/1 200 74ms
+PASS auth.test.ts > case_040 (10ms)
+  [db] pool conn=18 query=2ms rows=23
+PASS session.test.ts > case_041 (40ms)
+  [db] pool conn=1 query=2ms rows=13
+PASS users.test.ts > case_042 (40ms)
+  [db] pool conn=13 query=3ms rows=40
+  [http] GET /v1/users/259 200 46ms
+PASS orders.test.ts > case_043 (39ms)
+  [db] pool conn=12 query=8ms rows=7
+PASS billing.test.ts > case_044 (8ms)
+  [db] pool conn=16 query=8ms rows=30
+PASS search.test.ts > case_045 (31ms)
+  [db] pool conn=10 query=2ms rows=9
+  [http] GET /v1/search/105 200 45ms
+PASS profile.test.ts > case_046 (17ms)
+  [db] pool conn=16 query=3ms rows=33
+PASS admin.test.ts > case_047 (2ms)
+  [db] pool conn=7 query=9ms rows=23
+PASS notify.test.ts > case_048 (10ms)
+  [db] pool conn=18 query=1ms rows=48
+  [http] GET /v1/notify/541 200 40ms
+PASS audit.test.ts > case_049 (6ms)
+  [db] pool conn=9 query=9ms rows=23
+PASS auth.test.ts > case_050 (11ms)
+  [db] pool conn=12 query=4ms rows=34
+PASS session.test.ts > case_051 (35ms)
+  [db] pool conn=17 query=6ms rows=40
+  [http] GET /v1/session/229 200 80ms
+PASS users.test.ts > case_052 (13ms)
+  [db] pool conn=8 query=7ms rows=47
+PASS orders.test.ts > case_053 (15ms)
+  [db] pool conn=7 query=9ms rows=31
+PASS billing.test.ts > case_054 (23ms)
+  [db] pool conn=1 query=1ms rows=50
+  [http] GET /v1/billing/287 200 62ms
+PASS search.test.ts > case_055 (17ms)
+  [db] pool conn=7 query=6ms rows=28
+PASS profile.test.ts > case_056 (23ms)
+  [db] pool conn=12 query=2ms rows=14
+PASS admin.test.ts > case_057 (7ms)
+  [db] pool conn=8 query=8ms rows=12
+  [http] GET /v1/admin/346 200 28ms
+PASS notify.test.ts > case_058 (31ms)
+  [db] pool conn=20 query=1ms rows=30
+PASS audit.test.ts > case_059 (23ms)
+  [db] pool conn=3 query=2ms rows=24
+PASS auth.test.ts > case_060 (13ms)
+  [db] pool conn=16 query=3ms rows=27
+  [http] GET /v1/auth/809 200 83ms
+PASS session.test.ts > case_061 (22ms)
+  [db] pool conn=3 query=7ms rows=29
+PASS users.test.ts > case_062 (26ms)
+  [db] pool conn=3 query=3ms rows=10
+PASS orders.test.ts > case_063 (9ms)
+  [db] pool conn=1 query=3ms rows=37
+  [http] GET /v1/orders/927 200 61ms
+PASS billing.test.ts > case_064 (10ms)
+  [db] pool conn=20 query=8ms rows=42
+PASS search.test.ts > case_065 (23ms)
+  [db] pool conn=5 query=9ms rows=35
+PASS profile.test.ts > case_066 (9ms)
+  [db] pool conn=1 query=1ms rows=46
+  [http] GET /v1/profile/666 200 15ms
+PASS admin.test.ts > case_067 (34ms)
+  [db] pool conn=5 query=7ms rows=12
+PASS notify.test.ts > case_068 (14ms)
+  [db] pool conn=1 query=5ms rows=13
+PASS audit.test.ts > case_069 (19ms)
+  [db] pool conn=17 query=4ms rows=48
+  [http] GET /v1/audit/601 200 43ms
+PASS auth.test.ts > case_070 (17ms)
+  [db] pool conn=18 query=7ms rows=8
+PASS session.test.ts > case_071 (4ms)
+  [db] pool conn=12 query=8ms rows=42
+PASS users.test.ts > case_072 (38ms)
+  [db] pool conn=17 query=7ms rows=32
+  [http] GET /v1/users/134 200 70ms
+PASS orders.test.ts > case_073 (10ms)
+  [db] pool conn=17 query=9ms rows=1
+PASS billing.test.ts > case_074 (29ms)
+  [db] pool conn=6 query=1ms rows=49
+PASS search.test.ts > case_075 (10ms)
+  [db] pool conn=6 query=3ms rows=30
+  [http] GET /v1/search/634 200 17ms
+PASS profile.test.ts > case_076 (36ms)
+  [db] pool conn=2 query=6ms rows=43
+PASS admin.test.ts > case_077 (34ms)
+  [db] pool conn=17 query=9ms rows=30
+PASS notify.test.ts > case_078 (7ms)
+  [db] pool conn=18 query=1ms rows=15
+  [http] GET /v1/notify/196 200 37ms
+PASS audit.test.ts > case_079 (3ms)
+  [db] pool conn=4 query=9ms rows=28
+PASS auth.test.ts > case_080 (36ms)
+  [db] pool conn=1 query=2ms rows=28
+PASS session.test.ts > case_081 (21ms)
+  [db] pool conn=20 query=9ms rows=38
+  [http] GET /v1/session/525 200 27ms
+PASS users.test.ts > case_082 (18ms)
+  [db] pool conn=15 query=9ms rows=34
+PASS orders.test.ts > case_083 (31ms)
+  [db] pool conn=17 query=4ms rows=44
+PASS billing.test.ts > case_084 (34ms)
+  [db] pool conn=9 query=9ms rows=12
+  [http] GET /v1/billing/861 200 59ms
+PASS search.test.ts > case_085 (9ms)
+  [db] pool conn=14 query=2ms rows=25
+PASS profile.test.ts > case_086 (29ms)
+  [db] pool conn=11 query=2ms rows=42
+PASS admin.test.ts > case_087 (16ms)
+  [db] pool conn=14 query=2ms rows=13
+  [http] GET /v1/admin/686 200 40ms
+PASS notify.test.ts > case_088 (8ms)
+  [db] pool conn=5 query=6ms rows=9
+PASS audit.test.ts > case_089 (17ms)
+  [db] pool conn=5 query=8ms rows=14
+PASS auth.test.ts > case_090 (7ms)
+  [db] pool conn=13 query=8ms rows=10
+  [http] GET /v1/auth/684 200 30ms
+PASS session.test.ts > case_091 (11ms)
+  [db] pool conn=14 query=9ms rows=25
+PASS users.test.ts > case_092 (22ms)
+  [db] pool conn=14 query=4ms rows=22
+PASS orders.test.ts > case_093 (21ms)
+  [db] pool conn=3 query=6ms rows=1
+  [http] GET /v1/orders/347 200 72ms
+PASS billing.test.ts > case_094 (30ms)
+  [db] pool conn=15 query=1ms rows=24
+PASS search.test.ts > case_095 (22ms)
+  [db] pool conn=17 query=5ms rows=32
+PASS profile.test.ts > case_096 (5ms)
+  [db] pool conn=4 query=4ms rows=6
+  [http] GET /v1/profile/87 200 35ms
+PASS admin.test.ts > case_097 (18ms)
+  [db] pool conn=2 query=3ms rows=17
+PASS notify.test.ts > case_098 (9ms)
+  [db] pool conn=14 query=5ms rows=25
+PASS audit.test.ts > case_099 (10ms)
+  [db] pool conn=18 query=9ms rows=36
+  [http] GET /v1/audit/507 200 43ms
+PASS auth.test.ts > case_100 (6ms)
+  [db] pool conn=9 query=1ms rows=44
+PASS session.test.ts > case_101 (12ms)
+  [db] pool conn=14 query=2ms rows=17
+PASS users.test.ts > case_102 (2ms)
+  [db] pool conn=3 query=5ms rows=5
+  [http] GET /v1/users/623 200 30ms
+PASS orders.test.ts > case_103 (5ms)
+  [db] pool conn=9 query=2ms rows=29
+PASS billing.test.ts > case_104 (1ms)
+  [db] pool conn=11 query=9ms rows=26
+PASS search.test.ts > case_105 (18ms)
+  [db] pool conn=20 query=3ms rows=2
+  [http] GET /v1/search/540 200 32ms
+PASS profile.test.ts > case_106 (8ms)
+  [db] pool conn=6 query=5ms rows=3
+PASS admin.test.ts > case_107 (12ms)
+  [db] pool conn=7 query=5ms rows=40
+PASS notify.test.ts > case_108 (20ms)
+  [db] pool conn=17 query=4ms rows=18
+  [http] GET /v1/notify/457 200 66ms
+PASS audit.test.ts > case_109 (12ms)
+  [db] pool conn=9 query=6ms rows=1
+PASS auth.test.ts > case_110 (17ms)
+  [db] pool conn=2 query=1ms rows=1
+PASS session.test.ts > case_111 (33ms)
+  [db] pool conn=18 query=4ms rows=32
+  [http] GET /v1/session/487 200 33ms
+PASS users.test.ts > case_112 (29ms)
+  [db] pool conn=4 query=7ms rows=42
+PASS orders.test.ts > case_113 (32ms)
+  [db] pool conn=18 query=7ms rows=32
+PASS billing.test.ts > case_114 (20ms)
+  [db] pool conn=7 query=4ms rows=21
+  [http] GET /v1/billing/204 200 83ms
+PASS search.test.ts > case_115 (9ms)
+  [db] pool conn=13 query=6ms rows=3
+PASS profile.test.ts > case_116 (9ms)
+  [db] pool conn=1 query=2ms rows=40
+PASS admin.test.ts > case_117 (17ms)
+  [db] pool conn=14 query=3ms rows=3
+  [http] GET /v1/admin/87 200 87ms
+PASS notify.test.ts > case_118 (25ms)
+  [db] pool conn=17 query=5ms rows=38
+PASS audit.test.ts > case_119 (16ms)
+  [db] pool conn=10 query=1ms rows=29
+PASS auth.test.ts > case_120 (12ms)
+  [db] pool conn=6 query=5ms rows=28
+  [http] GET /v1/auth/4 200 35ms
+FAIL auth.test.ts > refresh > concurrent refresh issues exactly one new token
+  AssertionError: expected 1 active refresh token for user u_42, got 2
+    at auth.test.ts:88:31
+  note: 2 parallel POST /auth/refresh with the same token, TOKEN_TTL=3600
+PASS session.test.ts > case_121 (24ms)
+  [db] pool conn=11 query=9ms rows=20
+PASS users.test.ts > case_122 (16ms)
+  [db] pool conn=2 query=5ms rows=13
+PASS orders.test.ts > case_123 (23ms)
+  [db] pool conn=6 query=1ms rows=21
+  [http] GET /v1/orders/391 200 12ms
+PASS billing.test.ts > case_124 (31ms)
+  [db] pool conn=9 query=9ms rows=41
+PASS search.test.ts > case_125 (13ms)
+  [db] pool conn=8 query=9ms rows=49
+PASS profile.test.ts > case_126 (1ms)
+  [db] pool conn=3 query=5ms rows=5
+  [http] GET /v1/profile/148 200 53ms
+PASS admin.test.ts > case_127 (38ms)
+  [db] pool conn=2 query=7ms rows=1
+PASS notify.test.ts > case_128 (20ms)
+  [db] pool conn=10 query=4ms rows=5
+PASS audit.test.ts > case_129 (38ms)
+  [db] pool conn=17 query=3ms rows=42
+  [http] GET /v1/audit/915 200 78ms
+PASS auth.test.ts > case_130 (25ms)
+  [db] pool conn=11 query=8ms rows=9
+PASS session.test.ts > case_131 (19ms)
+  [db] pool conn=20 query=3ms rows=2
+PASS users.test.ts > case_132 (33ms)
+  [db] pool conn=14 query=9ms rows=8
+  [http] GET /v1/users/932 200 69ms
+PASS orders.test.ts > case_133 (33ms)
+  [db] pool conn=19 query=1ms rows=43
+PASS billing.test.ts > case_134 (38ms)
+  [db] pool conn=8 query=2ms rows=1
+PASS search.test.ts > case_135 (3ms)
+  [db] pool conn=5 query=6ms rows=6
+  [http] GET /v1/search/386 200 59ms
+PASS profile.test.ts > case_136 (36ms)
+  [db] pool conn=2 query=1ms rows=40
+PASS admin.test.ts > case_137 (35ms)
+  [db] pool conn=8 query=8ms rows=16
+PASS notify.test.ts > case_138 (1ms)
+  [db] pool conn=15 query=2ms rows=47
+  [http] GET /v1/notify/955 200 66ms
+PASS audit.test.ts > case_139 (35ms)
+  [db] pool conn=3 query=9ms rows=4
+PASS auth.test.ts > case_140 (31ms)
+  [db] pool conn=9 query=2ms rows=16
+PASS session.test.ts > case_141 (16ms)
+  [db] pool conn=7 query=4ms rows=47
+  [http] GET /v1/session/666 200 60ms
+PASS users.test.ts > case_142 (32ms)
+  [db] pool conn=13 query=2ms rows=30
+PASS orders.test.ts > case_143 (19ms)
+  [db] pool conn=2 query=4ms rows=4
+PASS billing.test.ts > case_144 (39ms)
+  [db] pool conn=5 query=6ms rows=16
+  [http] GET /v1/billing/668 200 90ms
+PASS search.test.ts > case_145 (20ms)
+  [db] pool conn=20 query=3ms rows=0
+PASS profile.test.ts > case_146 (31ms)
+  [db] pool conn=2 query=8ms rows=17
+PASS admin.test.ts > case_147 (7ms)
+  [db] pool conn=7 query=8ms rows=18
+  [http] GET /v1/admin/726 200 68ms
+PASS notify.test.ts > case_148 (19ms)
+  [db] pool conn=15 query=8ms rows=29
+PASS audit.test.ts > case_149 (8ms)
+  [db] pool conn=18 query=4ms rows=19
+PASS auth.test.ts > case_150 (6ms)
+  [db] pool conn=16 query=1ms rows=18
+  [http] GET /v1/auth/470 200 11ms
+PASS session.test.ts > case_151 (33ms)
+  [db] pool conn=15 query=5ms rows=24
+PASS users.test.ts > case_152 (14ms)
+  [db] pool conn=7 query=2ms rows=37
+PASS orders.test.ts > case_153 (6ms)
+  [db] pool conn=5 query=9ms rows=16
+  [http] GET /v1/orders/976 200 48ms
+PASS billing.test.ts > case_154 (9ms)
+  [db] pool conn=20 query=9ms rows=17
+PASS search.test.ts > case_155 (8ms)
+  [db] pool conn=12 query=4ms rows=31
+PASS profile.test.ts > case_156 (32ms)
+  [db] pool conn=13 query=1ms rows=10
+  [http] GET /v1/profile/4 200 64ms
+PASS admin.test.ts > case_157 (29ms)
+  [db] pool conn=13 query=5ms rows=46
+PASS notify.test.ts > case_158 (10ms)
+  [db] pool conn=14 query=6ms rows=24
+PASS audit.test.ts > case_159 (21ms)
+  [db] pool conn=4 query=6ms rows=0
+  [http] GET /v1/audit/333 200 45ms
+PASS auth.test.ts > case_160 (26ms)
+  [db] pool conn=4 query=4ms rows=45
+PASS session.test.ts > case_161 (1ms)
+  [db] pool conn=10 query=5ms rows=23
+PASS users.test.ts > case_162 (5ms)
+  [db] pool conn=13 query=7ms rows=37
+  [http] GET /v1/users/79 200 48ms
+PASS orders.test.ts > case_163 (28ms)
+  [db] pool conn=9 query=1ms rows=17
+PASS billing.test.ts > case_164 (7ms)
+  [db] pool conn=2 query=5ms rows=40
+PASS search.test.ts > case_165 (10ms)
+  [db] pool conn=8 query=5ms rows=27
+  [http] GET /v1/search/524 200 42ms
+PASS profile.test.ts > case_166 (13ms)
+  [db] pool conn=12 query=7ms rows=1
+PASS admin.test.ts > case_167 (26ms)
+  [db] pool conn=18 query=9ms rows=13
+PASS notify.test.ts > case_168 (6ms)
+  [db] pool conn=2 query=7ms rows=28
+  [http] GET /v1/notify/630 200 19ms
+PASS audit.test.ts > case_169 (19ms)
+  [db] pool conn=16 query=1ms rows=35
+PASS auth.test.ts > case_170 (9ms)
+  [db] pool conn=6 query=8ms rows=26
+PASS session.test.ts > case_171 (22ms)
+  [db] pool conn=10 query=5ms rows=16
+  [http] GET /v1/session/757 200 85ms
+PASS users.test.ts > case_172 (17ms)
+  [db] pool conn=13 query=4ms rows=19
+PASS orders.test.ts > case_173 (31ms)
+  [db] pool conn=18 query=7ms rows=7
+PASS billing.test.ts > case_174 (11ms)
+  [db] pool conn=6 query=2ms rows=13
+  [http] GET /v1/billing/513 200 65ms
+PASS search.test.ts > case_175 (36ms)
+  [db] pool conn=8 query=8ms rows=21
+PASS profile.test.ts > case_176 (29ms)
+  [db] pool conn=14 query=3ms rows=35
+PASS admin.test.ts > case_177 (13ms)
+  [db] pool conn=8 query=2ms rows=11
+  [http] GET /v1/admin/351 200 73ms
+PASS notify.test.ts > case_178 (6ms)
+  [db] pool conn=11 query=4ms rows=23
+PASS audit.test.ts > case_179 (17ms)
+  [db] pool conn=19 query=4ms rows=1
+PASS auth.test.ts > case_180 (27ms)
+  [db] pool conn=13 query=7ms rows=47
+  [http] GET /v1/auth/537 200 28ms
+PASS session.test.ts > case_181 (25ms)
+  [db] pool conn=9 query=6ms rows=48
+PASS users.test.ts > case_182 (4ms)
+  [db] pool conn=16 query=5ms rows=36
+PASS orders.test.ts > case_183 (24ms)
+  [db] pool conn=5 query=9ms rows=33
+  [http] GET /v1/orders/645 200 29ms
+PASS billing.test.ts > case_184 (6ms)
+  [db] pool conn=9 query=4ms rows=24
+PASS search.test.ts > case_185 (26ms)
+  [db] pool conn=15 query=7ms rows=19
+PASS profile.test.ts > case_186 (2ms)
+  [db] pool conn=5 query=1ms rows=27
+  [http] GET /v1/profile/727 200 62ms
+PASS admin.test.ts > case_187 (38ms)
+  [db] pool conn=16 query=1ms rows=4
+PASS notify.test.ts > case_188 (26ms)
+  [db] pool conn=17 query=8ms rows=28
+PASS audit.test.ts > case_189 (16ms)
+  [db] pool conn=4 query=4ms rows=9
+  [http] GET /v1/audit/156 200 68ms
+PASS auth.test.ts > case_190 (7ms)
+  [db] pool conn=15 query=2ms rows=35
+PASS session.test.ts > case_191 (3ms)
+  [db] pool conn=1 query=3ms rows=14
+PASS users.test.ts > case_192 (37ms)
+  [db] pool conn=2 query=5ms rows=8
+  [http] GET /v1/users/642 200 34ms
+PASS orders.test.ts > case_193 (34ms)
+  [db] pool conn=14 query=2ms rows=6
+PASS billing.test.ts > case_194 (5ms)
+  [db] pool conn=10 query=9ms rows=37
+PASS search.test.ts > case_195 (13ms)
+  [db] pool conn=13 query=5ms rows=14
+  [http] GET /v1/search/810 200 78ms
+PASS profile.test.ts > case_196 (1ms)
+  [db] pool conn=1 query=9ms rows=19
+PASS admin.test.ts > case_197 (30ms)
+  [db] pool conn=9 query=6ms rows=41
+PASS notify.test.ts > case_198 (16ms)
+  [db] pool conn=16 query=9ms rows=15
+  [http] GET /v1/notify/561 200 33ms
+PASS audit.test.ts > case_199 (2ms)
+  [db] pool conn=14 query=5ms rows=3
+PASS auth.test.ts > case_200 (2ms)
+  [db] pool conn=7 query=8ms rows=43
+PASS session.test.ts > case_201 (27ms)
+  [db] pool conn=3 query=5ms rows=14
+  [http] GET /v1/session/684 200 56ms
+PASS users.test.ts > case_202 (24ms)
+  [db] pool conn=8 query=8ms rows=2
+PASS orders.test.ts > case_203 (22ms)
+  [db] pool conn=14 query=6ms rows=43
+PASS billing.test.ts > case_204 (26ms)
+  [db] pool conn=7 query=1ms rows=18
+  [http] GET /v1/billing/757 200 66ms
+PASS search.test.ts > case_205 (5ms)
+  [db] pool conn=7 query=8ms rows=12
+PASS profile.test.ts > case_206 (20ms)
+  [db] pool conn=7 query=4ms rows=29
+PASS admin.test.ts > case_207 (15ms)
+  [db] pool conn=9 query=5ms rows=6
+  [http] GET /v1/admin/975 200 81ms
+PASS notify.test.ts > case_208 (32ms)
+  [db] pool conn=20 query=3ms rows=14
+PASS audit.test.ts > case_209 (32ms)
+  [db] pool conn=14 query=1ms rows=38
+PASS auth.test.ts > case_210 (10ms)
+  [db] pool conn=13 query=1ms rows=13
+  [http] GET /v1/auth/25 200 78ms
+PASS session.test.ts > case_211 (10ms)
+  [db] pool conn=14 query=1ms rows=45
+PASS users.test.ts > case_212 (4ms)
+  [db] pool conn=6 query=7ms rows=28
+PASS orders.test.ts > case_213 (21ms)
+  [db] pool conn=4 query=2ms rows=10
+  [http] GET /v1/orders/338 200 26ms
+PASS billing.test.ts > case_214 (12ms)
+  [db] pool conn=17 query=8ms rows=2
+PASS search.test.ts > case_215 (20ms)
+  [db] pool conn=13 query=6ms rows=21
+PASS profile.test.ts > case_216 (29ms)
+  [db] pool conn=6 query=2ms rows=0
+  [http] GET /v1/profile/81 200 37ms
+PASS admin.test.ts > case_217 (6ms)
+  [db] pool conn=12 query=7ms rows=7
+PASS notify.test.ts > case_218 (36ms)
+  [db] pool conn=7 query=7ms rows=22
+PASS audit.test.ts > case_219 (20ms)
+  [db] pool conn=14 query=2ms rows=3
+  [http] GET /v1/audit/723 200 62ms
+PASS auth.test.ts > case_220 (13ms)
+  [db] pool conn=12 query=9ms rows=28
+PASS session.test.ts > case_221 (13ms)
+  [db] pool conn=11 query=6ms rows=47
+PASS users.test.ts > case_222 (31ms)
+  [db] pool conn=1 query=7ms rows=15
+  [http] GET /v1/users/832 200 82ms
+PASS orders.test.ts > case_223 (26ms)
+  [db] pool conn=2 query=7ms rows=2
+PASS billing.test.ts > case_224 (30ms)
+  [db] pool conn=3 query=1ms rows=16
+PASS search.test.ts > case_225 (13ms)
+  [db] pool conn=3 query=6ms rows=23
+  [http] GET /v1/search/279 200 44ms
+PASS profile.test.ts > case_226 (40ms)
+  [db] pool conn=2 query=5ms rows=47
+PASS admin.test.ts > case_227 (21ms)
+  [db] pool conn=9 query=5ms rows=0
+PASS notify.test.ts > case_228 (39ms)
+  [db] pool conn=3 query=1ms rows=14
+  [http] GET /v1/notify/110 200 62ms
+PASS audit.test.ts > case_229 (30ms)
+  [db] pool conn=13 query=5ms rows=27
+PASS auth.test.ts > case_230 (32ms)
+  [db] pool conn=5 query=8ms rows=11
+PASS session.test.ts > case_231 (1ms)
+  [db] pool conn=10 query=3ms rows=38
+  [http] GET /v1/session/242 200 43ms
+PASS users.test.ts > case_232 (21ms)
+  [db] pool conn=15 query=6ms rows=50
+PASS orders.test.ts > case_233 (39ms)
+  [db] pool conn=3 query=9ms rows=12
+PASS billing.test.ts > case_234 (26ms)
+  [db] pool conn=6 query=4ms rows=26
+  [http] GET /v1/billing/67 200 85ms
+PASS search.test.ts > case_235 (3ms)
+  [db] pool conn=16 query=9ms rows=34
+PASS profile.test.ts > case_236 (21ms)
+  [db] pool conn=6 query=7ms rows=6
+PASS admin.test.ts > case_237 (5ms)
+  [db] pool conn=9 query=2ms rows=13
+  [http] GET /v1/admin/99 200 55ms
+PASS notify.test.ts > case_238 (32ms)
+  [db] pool conn=15 query=3ms rows=14
+PASS audit.test.ts > case_239 (9ms)
+  [db] pool conn=14 query=8ms rows=39
+PASS auth.test.ts > case_240 (16ms)
+  [db] pool conn=18 query=2ms rows=49
+  [http] GET /v1/auth/862 200 39ms
+PASS session.test.ts > case_241 (19ms)
+  [db] pool conn=9 query=5ms rows=23
+PASS users.test.ts > case_242 (17ms)
+  [db] pool conn=9 query=4ms rows=28
+PASS orders.test.ts > case_243 (16ms)
+  [db] pool conn=6 query=4ms rows=15
+  [http] GET /v1/orders/158 200 38ms
+PASS billing.test.ts > case_244 (38ms)
+  [db] pool conn=7 query=6ms rows=4
+PASS search.test.ts > case_245 (26ms)
+  [db] pool conn=9 query=4ms rows=32
+PASS profile.test.ts > case_246 (34ms)
+  [db] pool conn=8 query=2ms rows=41
+  [http] GET /v1/profile/476 200 6ms
+PASS admin.test.ts > case_247 (7ms)
+  [db] pool conn=1 query=8ms rows=14
+PASS notify.test.ts > case_248 (29ms)
+  [db] pool conn=12 query=1ms rows=18
+PASS audit.test.ts > case_249 (15ms)
+  [db] pool conn=4 query=1ms rows=12
+  [http] GET /v1/audit/615 200 76ms
+PASS auth.test.ts > case_250 (13ms)
+  [db] pool conn=3 query=6ms rows=32
+PASS session.test.ts > case_251 (12ms)
+  [db] pool conn=15 query=5ms rows=49
+PASS users.test.ts > case_252 (1ms)
+  [db] pool conn=4 query=6ms rows=13
+  [http] GET /v1/users/39 200 49ms
+PASS orders.test.ts > case_253 (22ms)
+  [db] pool conn=5 query=1ms rows=13
+PASS billing.test.ts > case_254 (17ms)
+  [db] pool conn=2 query=4ms rows=0
+PASS search.test.ts > case_255 (21ms)
+  [db] pool conn=14 query=6ms rows=11
+  [http] GET /v1/search/636 200 41ms
+PASS profile.test.ts > case_256 (5ms)
+  [db] pool conn=7 query=1ms rows=50
+PASS admin.test.ts > case_257 (32ms)
+  [db] pool conn=18 query=8ms rows=4
+PASS notify.test.ts > case_258 (27ms)
+  [db] pool conn=4 query=7ms rows=42
+  [http] GET /v1/notify/564 200 21ms
+PASS audit.test.ts > case_259 (35ms)
+  [db] pool conn=3 query=3ms rows=25
+PASS auth.test.ts > case_260 (18ms)
+  [db] pool conn=14 query=5ms rows=42
+FAIL auth.test.ts > refresh > old token rejected after rotation
+  AssertionError: expected 401 for reused refresh token, got 200
+    at auth.test.ts:112:9
+PASS session.test.ts > case_261 (20ms)
+  [db] pool conn=14 query=1ms rows=19
+  [http] GET /v1/session/764 200 74ms
+PASS users.test.ts > case_262 (23ms)
+  [db] pool conn=14 query=7ms rows=1
+PASS orders.test.ts > case_263 (24ms)
+  [db] pool conn=7 query=7ms rows=46
+PASS billing.test.ts > case_264 (26ms)
+  [db] pool conn=7 query=1ms rows=27
+  [http] GET /v1/billing/924 200 22ms
+PASS search.test.ts > case_265 (28ms)
+  [db] pool conn=4 query=2ms rows=25
+PASS profile.test.ts > case_266 (37ms)
+  [db] pool conn=12 query=8ms rows=49
+PASS admin.test.ts > case_267 (11ms)
+  [db] pool conn=5 query=1ms rows=3
+  [http] GET /v1/admin/565 200 20ms
+PASS notify.test.ts > case_268 (26ms)
+  [db] pool conn=3 query=6ms rows=47
+PASS audit.test.ts > case_269 (33ms)
+  [db] pool conn=6 query=3ms rows=22
+PASS auth.test.ts > case_270 (19ms)
+  [db] pool conn=6 query=9ms rows=10
+  [http] GET /v1/auth/948 200 10ms
+PASS session.test.ts > case_271 (7ms)
+  [db] pool conn=13 query=8ms rows=48
+PASS users.test.ts > case_272 (13ms)
+  [db] pool conn=10 query=3ms rows=2
+PASS orders.test.ts > case_273 (31ms)
+  [db] pool conn=11 query=1ms rows=38
+  [http] GET /v1/orders/949 200 83ms
+PASS billing.test.ts > case_274 (25ms)
+  [db] pool conn=3 query=3ms rows=40
+PASS search.test.ts > case_275 (15ms)
+  [db] pool conn=20 query=7ms rows=39
+PASS profile.test.ts > case_276 (13ms)
+  [db] pool conn=16 query=3ms rows=36
+  [http] GET /v1/profile/224 200 7ms
+PASS admin.test.ts > case_277 (26ms)
+  [db] pool conn=17 query=3ms rows=24
+PASS notify.test.ts > case_278 (23ms)
+  [db] pool conn=4 query=3ms rows=15
+PASS audit.test.ts > case_279 (13ms)
+  [db] pool conn=2 query=9ms rows=48
+  [http] GET /v1/audit/689 200 6ms
+PASS auth.test.ts > case_280 (21ms)
+  [db] pool conn=4 query=7ms rows=38
+PASS session.test.ts > case_281 (30ms)
+  [db] pool conn=18 query=5ms rows=41
+PASS users.test.ts > case_282 (27ms)
+  [db] pool conn=10 query=4ms rows=27
+  [http] GET /v1/users/399 200 86ms
+PASS orders.test.ts > case_283 (24ms)
+  [db] pool conn=15 query=9ms rows=28
+PASS billing.test.ts > case_284 (12ms)
+  [db] pool conn=1 query=1ms rows=39
+PASS search.test.ts > case_285 (32ms)
+  [db] pool conn=15 query=4ms rows=28
+  [http] GET /v1/search/782 200 81ms
+PASS profile.test.ts > case_286 (30ms)
+  [db] pool conn=6 query=8ms rows=25
+PASS admin.test.ts > case_287 (7ms)
+  [db] pool conn=3 query=3ms rows=22
+PASS notify.test.ts > case_288 (28ms)
+  [db] pool conn=12 query=2ms rows=28
+  [http] GET /v1/notify/517 200 67ms
+PASS audit.test.ts > case_289 (3ms)
+  [db] pool conn=2 query=3ms rows=5
+PASS auth.test.ts > case_290 (21ms)
+  [db] pool conn=17 query=2ms rows=3
+PASS session.test.ts > case_291 (33ms)
+  [db] pool conn=13 query=3ms rows=1
+  [http] GET /v1/session/878 200 10ms
+PASS users.test.ts > case_292 (40ms)
+  [db] pool conn=4 query=4ms rows=8
+PASS orders.test.ts > case_293 (32ms)
+  [db] pool conn=10 query=3ms rows=43
+PASS billing.test.ts > case_294 (15ms)
+  [db] pool conn=3 query=6ms rows=39
+  [http] GET /v1/billing/775 200 34ms
+PASS search.test.ts > case_295 (11ms)
+  [db] pool conn=11 query=5ms rows=29
+PASS profile.test.ts > case_296 (10ms)
+  [db] pool conn=9 query=9ms rows=30
+PASS admin.test.ts > case_297 (14ms)
+  [db] pool conn=19 query=5ms rows=39
+  [http] GET /v1/admin/519 200 32ms
+PASS notify.test.ts > case_298 (21ms)
+  [db] pool conn=12 query=1ms rows=12
+PASS audit.test.ts > case_299 (12ms)
+  [db] pool conn=13 query=3ms rows=40
+PASS auth.test.ts > case_300 (18ms)
+  [db] pool conn=11 query=7ms rows=10
+  [http] GET /v1/auth/812 200 35ms
+PASS session.test.ts > case_301 (8ms)
+  [db] pool conn=17 query=1ms rows=40
+PASS users.test.ts > case_302 (24ms)
+  [db] pool conn=15 query=9ms rows=33
+PASS orders.test.ts > case_303 (38ms)
+  [db] pool conn=4 query=5ms rows=34
+  [http] GET /v1/orders/645 200 52ms
+PASS billing.test.ts > case_304 (24ms)
+  [db] pool conn=9 query=7ms rows=23
+PASS search.test.ts > case_305 (37ms)
+  [db] pool conn=5 query=6ms rows=21
+PASS profile.test.ts > case_306 (6ms)
+  [db] pool conn=15 query=4ms rows=11
+  [http] GET /v1/profile/631 200 8ms
+PASS admin.test.ts > case_307 (19ms)
+  [db] pool conn=17 query=5ms rows=19
+PASS notify.test.ts > case_308 (38ms)
+  [db] pool conn=11 query=1ms rows=47
+PASS audit.test.ts > case_309 (3ms)
+  [db] pool conn=8 query=3ms rows=18
+  [http] GET /v1/audit/631 200 82ms
+PASS auth.test.ts > case_310 (28ms)
+  [db] pool conn=14 query=9ms rows=23
+PASS session.test.ts > case_311 (4ms)
+  [db] pool conn=5 query=8ms rows=14
+PASS users.test.ts > case_312 (40ms)
+  [db] pool conn=2 query=1ms rows=3
+  [http] GET /v1/users/3 200 74ms
+PASS orders.test.ts > case_313 (23ms)
+  [db] pool conn=10 query=2ms rows=33
+PASS billing.test.ts > case_314 (23ms)
+  [db] pool conn=18 query=4ms rows=26
+PASS search.test.ts > case_315 (38ms)
+  [db] pool conn=10 query=3ms rows=13
+  [http] GET /v1/search/376 200 81ms
+PASS profile.test.ts > case_316 (31ms)
+  [db] pool conn=6 query=3ms rows=0
+PASS admin.test.ts > case_317 (16ms)
+  [db] pool conn=5 query=8ms rows=6
+PASS notify.test.ts > case_318 (5ms)
+  [db] pool conn=5 query=5ms rows=25
+  [http] GET /v1/notify/832 200 35ms
+PASS audit.test.ts > case_319 (1ms)
+  [db] pool conn=2 query=9ms rows=22
+PASS auth.test.ts > case_320 (39ms)
+  [db] pool conn=19 query=8ms rows=38
+PASS session.test.ts > case_321 (34ms)
+  [db] pool conn=16 query=4ms rows=10
+  [http] GET /v1/session/926 200 2ms
+PASS users.test.ts > case_322 (3ms)
+  [db] pool conn=2 query=9ms rows=1
+PASS orders.test.ts > case_323 (26ms)
+  [db] pool conn=6 query=4ms rows=10
+PASS billing.test.ts > case_324 (4ms)
+  [db] pool conn=4 query=1ms rows=39
+  [http] GET /v1/billing/565 200 86ms
+PASS search.test.ts > case_325 (13ms)
+  [db] pool conn=5 query=7ms rows=12
+PASS profile.test.ts > case_326 (34ms)
+  [db] pool conn=20 query=9ms rows=41
+PASS admin.test.ts > case_327 (27ms)
+  [db] pool conn=20 query=3ms rows=32
+  [http] GET /v1/admin/317 200 10ms
+PASS notify.test.ts > case_328 (20ms)
+  [db] pool conn=2 query=8ms rows=45
+PASS audit.test.ts > case_329 (35ms)
+  [db] pool conn=1 query=7ms rows=27
+PASS auth.test.ts > case_330 (30ms)
+  [db] pool conn=3 query=8ms rows=11
+  [http] GET /v1/auth/232 200 15ms
+PASS session.test.ts > case_331 (17ms)
+  [db] pool conn=8 query=1ms rows=7
+PASS users.test.ts > case_332 (22ms)
+  [db] pool conn=9 query=1ms rows=17
+PASS orders.test.ts > case_333 (36ms)
+  [db] pool conn=14 query=9ms rows=16
+  [http] GET /v1/orders/303 200 84ms
+PASS billing.test.ts > case_334 (14ms)
+  [db] pool conn=3 query=9ms rows=0
+PASS search.test.ts > case_335 (11ms)
+  [db] pool conn=9 query=4ms rows=47
+PASS profile.test.ts > case_336 (13ms)
+  [db] pool conn=6 query=6ms rows=12
+  [http] GET /v1/profile/902 200 51ms
+PASS admin.test.ts > case_337 (22ms)
+  [db] pool conn=20 query=4ms rows=24
+PASS notify.test.ts > case_338 (35ms)
+  [db] pool conn=16 query=8ms rows=33
+PASS audit.test.ts > case_339 (1ms)
+  [db] pool conn=1 query=7ms rows=46
+  [http] GET /v1/audit/240 200 75ms
+PASS auth.test.ts > case_340 (20ms)
+  [db] pool conn=7 query=7ms rows=39
+PASS session.test.ts > case_341 (38ms)
+  [db] pool conn=3 query=3ms rows=9
+PASS users.test.ts > case_342 (3ms)
+  [db] pool conn=1 query=2ms rows=6
+  [http] GET /v1/users/637 200 22ms
+PASS orders.test.ts > case_343 (23ms)
+  [db] pool conn=5 query=1ms rows=1
+PASS billing.test.ts > case_344 (3ms)
+  [db] pool conn=5 query=1ms rows=44
+PASS search.test.ts > case_345 (5ms)
+  [db] pool conn=2 query=2ms rows=37
+  [http] GET /v1/search/781 200 48ms
+PASS profile.test.ts > case_346 (13ms)
+  [db] pool conn=18 query=2ms rows=48
+PASS admin.test.ts > case_347 (25ms)
+  [db] pool conn=4 query=4ms rows=13
+PASS notify.test.ts > case_348 (14ms)
+  [db] pool conn=4 query=1ms rows=2
+  [http] GET /v1/notify/973 200 83ms
+PASS audit.test.ts > case_349 (6ms)
+  [db] pool conn=10 query=8ms rows=6
+PASS auth.test.ts > case_350 (9ms)
+  [db] pool conn=4 query=4ms rows=18
+PASS session.test.ts > case_351 (21ms)
+  [db] pool conn=11 query=7ms rows=16
+  [http] GET /v1/session/22 200 46ms
+PASS users.test.ts > case_352 (17ms)
+  [db] pool conn=10 query=1ms rows=45
+PASS orders.test.ts > case_353 (24ms)
+  [db] pool conn=11 query=9ms rows=30
+PASS billing.test.ts > case_354 (19ms)
+  [db] pool conn=20 query=1ms rows=50
+  [http] GET /v1/billing/423 200 5ms
+PASS search.test.ts > case_355 (28ms)
+  [db] pool conn=17 query=2ms rows=22
+PASS profile.test.ts > case_356 (31ms)
+  [db] pool conn=2 query=9ms rows=36
+PASS admin.test.ts > case_357 (14ms)
+  [db] pool conn=3 query=5ms rows=10
+  [http] GET /v1/admin/447 200 2ms
+PASS notify.test.ts > case_358 (34ms)
+  [db] pool conn=7 query=5ms rows=48
+PASS audit.test.ts > case_359 (4ms)
+  [db] pool conn=1 query=6ms rows=31
+PASS auth.test.ts > case_360 (7ms)
+  [db] pool conn=16 query=3ms rows=31
+  [http] GET /v1/auth/607 200 46ms
+PASS session.test.ts > case_361 (33ms)
+  [db] pool conn=9 query=3ms rows=18
+PASS users.test.ts > case_362 (14ms)
+  [db] pool conn=8 query=8ms rows=10
+PASS orders.test.ts > case_363 (8ms)
+  [db] pool conn=3 query=8ms rows=50
+  [http] GET /v1/orders/714 200 73ms
+PASS billing.test.ts > case_364 (7ms)
+  [db] pool conn=11 query=6ms rows=6
+PASS search.test.ts > case_365 (26ms)
+  [db] pool conn=13 query=2ms rows=27
+PASS profile.test.ts > case_366 (2ms)
+  [db] pool conn=12 query=4ms rows=19
+  [http] GET /v1/profile/270 200 56ms
+PASS admin.test.ts > case_367 (35ms)
+  [db] pool conn=17 query=3ms rows=24
+PASS notify.test.ts > case_368 (15ms)
+  [db] pool conn=15 query=3ms rows=34
+PASS audit.test.ts > case_369 (39ms)
+  [db] pool conn=20 query=1ms rows=22
+  [http] GET /v1/audit/596 200 43ms
+PASS auth.test.ts > case_370 (34ms)
+  [db] pool conn=5 query=8ms rows=42
+PASS session.test.ts > case_371 (36ms)
+  [db] pool conn=11 query=3ms rows=29
+PASS users.test.ts > case_372 (29ms)
+  [db] pool conn=9 query=4ms rows=8
+  [http] GET /v1/users/343 200 61ms
+PASS orders.test.ts > case_373 (16ms)
+  [db] pool conn=17 query=4ms rows=17
+PASS billing.test.ts > case_374 (20ms)
+  [db] pool conn=20 query=3ms rows=46
+PASS search.test.ts > case_375 (10ms)
+  [db] pool conn=8 query=6ms rows=38
+  [http] GET /v1/search/535 200 46ms
+PASS profile.test.ts > case_376 (11ms)
+  [db] pool conn=8 query=6ms rows=12
+PASS admin.test.ts > case_377 (17ms)
+  [db] pool conn=4 query=3ms rows=42
+FAIL session.test.ts > rotation > concurrent rotation keeps single session row
+  AssertionError: expected 1 row in refresh_tokens(user_id=u_42, revoked=false), got 2
+    at session.test.ts:57:14
+PASS notify.test.ts > case_378 (7ms)
+  [db] pool conn=7 query=7ms rows=9
+  [http] GET /v1/notify/152 200 40ms
+PASS audit.test.ts > case_379 (20ms)
+  [db] pool conn=14 query=5ms rows=12
+PASS auth.test.ts > case_380 (7ms)
+  [db] pool conn=4 query=5ms rows=13
+PASS session.test.ts > case_381 (25ms)
+  [db] pool conn=15 query=1ms rows=0
+  [http] GET /v1/session/409 200 57ms
+PASS users.test.ts > case_382 (15ms)
+  [db] pool conn=17 query=5ms rows=29
+PASS orders.test.ts > case_383 (2ms)
+  [db] pool conn=5 query=5ms rows=38
+PASS billing.test.ts > case_384 (26ms)
+  [db] pool conn=1 query=4ms rows=27
+  [http] GET /v1/billing/718 200 75ms
+PASS search.test.ts > case_385 (38ms)
+  [db] pool conn=14 query=4ms rows=42
+PASS profile.test.ts > case_386 (38ms)
+  [db] pool conn=8 query=3ms rows=41
+PASS admin.test.ts > case_387 (8ms)
+  [db] pool conn=15 query=7ms rows=20
+  [http] GET /v1/admin/267 200 82ms
+PASS notify.test.ts > case_388 (7ms)
+  [db] pool conn=14 query=4ms rows=50
+PASS audit.test.ts > case_389 (26ms)
+  [db] pool conn=6 query=5ms rows=27
+PASS auth.test.ts > case_390 (31ms)
+  [db] pool conn=15 query=1ms rows=39
+  [http] GET /v1/auth/880 200 54ms
+PASS session.test.ts > case_391 (34ms)
+  [db] pool conn=6 query=6ms rows=49
+PASS users.test.ts > case_392 (1ms)
+  [db] pool conn=13 query=8ms rows=6
+PASS orders.test.ts > case_393 (3ms)
+  [db] pool conn=9 query=9ms rows=13
+  [http] GET /v1/orders/165 200 27ms
+PASS billing.test.ts > case_394 (34ms)
+  [db] pool conn=12 query=2ms rows=36
+PASS search.test.ts > case_395 (30ms)
+  [db] pool conn=18 query=4ms rows=45
+PASS profile.test.ts > case_396 (31ms)
+  [db] pool conn=17 query=1ms rows=40
+  [http] GET /v1/profile/812 200 49ms
+PASS admin.test.ts > case_397 (34ms)
+  [db] pool conn=11 query=7ms rows=47
+PASS notify.test.ts > case_398 (30ms)
+  [db] pool conn=7 query=3ms rows=25
+PASS audit.test.ts > case_399 (33ms)
+  [db] pool conn=4 query=6ms rows=40
+  [http] GET /v1/audit/58 200 34ms
+PASS auth.test.ts > case_400 (18ms)
+  [db] pool conn=13 query=7ms rows=3
+PASS session.test.ts > case_401 (1ms)
+  [db] pool conn=3 query=7ms rows=26
+PASS users.test.ts > case_402 (23ms)
+  [db] pool conn=19 query=5ms rows=6
+  [http] GET /v1/users/230 200 40ms
+PASS orders.test.ts > case_403 (26ms)
+  [db] pool conn=17 query=4ms rows=25
+PASS billing.test.ts > case_404 (30ms)
+  [db] pool conn=7 query=3ms rows=8
+PASS search.test.ts > case_405 (5ms)
+  [db] pool conn=7 query=8ms rows=41
+  [http] GET /v1/search/576 200 30ms
+PASS profile.test.ts > case_406 (10ms)
+  [db] pool conn=12 query=7ms rows=29
+PASS admin.test.ts > case_407 (19ms)
+  [db] pool conn=18 query=3ms rows=49
+PASS notify.test.ts > case_408 (31ms)
+  [db] pool conn=12 query=4ms rows=17
+  [http] GET /v1/notify/722 200 50ms
+PASS audit.test.ts > case_409 (17ms)
+  [db] pool conn=14 query=3ms rows=30
+PASS auth.test.ts > case_410 (1ms)
+  [db] pool conn=9 query=6ms rows=15
+PASS session.test.ts > case_411 (20ms)
+  [db] pool conn=11 query=8ms rows=31
+  [http] GET /v1/session/439 200 81ms
+PASS users.test.ts > case_412 (6ms)
+  [db] pool conn=12 query=3ms rows=19
+PASS orders.test.ts > case_413 (25ms)
+  [db] pool conn=2 query=2ms rows=36
+PASS billing.test.ts > case_414 (21ms)
+  [db] pool conn=5 query=9ms rows=22
+  [http] GET /v1/billing/649 200 76ms
+PASS search.test.ts > case_415 (1ms)
+  [db] pool conn=1 query=4ms rows=4
+PASS profile.test.ts > case_416 (19ms)
+  [db] pool conn=9 query=2ms rows=37
+PASS admin.test.ts > case_417 (10ms)
+  [db] pool conn=8 query=3ms rows=49
+  [http] GET /v1/admin/463 200 46ms
+PASS notify.test.ts > case_418 (10ms)
+  [db] pool conn=7 query=7ms rows=50
+PASS audit.test.ts > case_419 (35ms)
+  [db] pool conn=6 query=2ms rows=42
+PASS auth.test.ts > case_420 (36ms)
+  [db] pool conn=10 query=4ms rows=31
+  [http] GET /v1/auth/710 200 29ms
+PASS session.test.ts > case_421 (34ms)
+  [db] pool conn=3 query=8ms rows=42
+PASS users.test.ts > case_422 (8ms)
+  [db] pool conn=18 query=2ms rows=16
+PASS orders.test.ts > case_423 (27ms)
+  [db] pool conn=8 query=3ms rows=30
+  [http] GET /v1/orders/505 200 73ms
+PASS billing.test.ts > case_424 (4ms)
+  [db] pool conn=16 query=8ms rows=9
+PASS search.test.ts > case_425 (32ms)
+  [db] pool conn=8 query=8ms rows=10
+PASS profile.test.ts > case_426 (35ms)
+  [db] pool conn=20 query=1ms rows=10
+  [http] GET /v1/profile/861 200 43ms
+PASS admin.test.ts > case_427 (30ms)
+  [db] pool conn=19 query=8ms rows=42
+PASS notify.test.ts > case_428 (19ms)
+  [db] pool conn=15 query=6ms rows=27
+PASS audit.test.ts > case_429 (27ms)
+  [db] pool conn=3 query=3ms rows=40
+  [http] GET /v1/audit/370 200 83ms
+PASS auth.test.ts > case_430 (2ms)
+  [db] pool conn=1 query=1ms rows=43
+PASS session.test.ts > case_431 (22ms)
+  [db] pool conn=4 query=9ms rows=30
+PASS users.test.ts > case_432 (32ms)
+  [db] pool conn=5 query=1ms rows=13
+  [http] GET /v1/users/736 200 55ms
+PASS orders.test.ts > case_433 (9ms)
+  [db] pool conn=11 query=2ms rows=42
+PASS billing.test.ts > case_434 (24ms)
+  [db] pool conn=11 query=8ms rows=49
+PASS search.test.ts > case_435 (34ms)
+  [db] pool conn=18 query=4ms rows=18
+  [http] GET /v1/search/446 200 45ms
+PASS profile.test.ts > case_436 (28ms)
+  [db] pool conn=9 query=9ms rows=3
+PASS admin.test.ts > case_437 (19ms)
+  [db] pool conn=10 query=6ms rows=31
+PASS notify.test.ts > case_438 (26ms)
+  [db] pool conn=11 query=9ms rows=17
+  [http] GET /v1/notify/894 200 66ms
+PASS audit.test.ts > case_439 (23ms)
+  [db] pool conn=7 query=8ms rows=50
+PASS auth.test.ts > case_440 (8ms)
+  [db] pool conn=11 query=4ms rows=20
+PASS session.test.ts > case_441 (20ms)
+  [db] pool conn=5 query=2ms rows=50
+  [http] GET /v1/session/42 200 53ms
+PASS users.test.ts > case_442 (36ms)
+  [db] pool conn=13 query=9ms rows=36
+PASS orders.test.ts > case_443 (4ms)
+  [db] pool conn=13 query=5ms rows=6
+PASS billing.test.ts > case_444 (1ms)
+  [db] pool conn=2 query=4ms rows=30
+  [http] GET /v1/billing/624 200 86ms
+PASS search.test.ts > case_445 (4ms)
+  [db] pool conn=17 query=9ms rows=39
+PASS profile.test.ts > case_446 (25ms)
+  [db] pool conn=20 query=3ms rows=40
+PASS admin.test.ts > case_447 (39ms)
+  [db] pool conn=3 query=4ms rows=2
+  [http] GET /v1/admin/684 200 83ms
+PASS notify.test.ts > case_448 (30ms)
+  [db] pool conn=6 query=2ms rows=42
+PASS audit.test.ts > case_449 (12ms)
+  [db] pool conn=2 query=7ms rows=49
+PASS auth.test.ts > case_450 (7ms)
+  [db] pool conn=1 query=6ms rows=8
+  [http] GET /v1/auth/806 200 41ms
+PASS session.test.ts > case_451 (36ms)
+  [db] pool conn=9 query=5ms rows=11
+PASS users.test.ts > case_452 (27ms)
+  [db] pool conn=2 query=6ms rows=1
+PASS orders.test.ts > case_453 (28ms)
+  [db] pool conn=19 query=1ms rows=31
+  [http] GET /v1/orders/582 200 68ms
+PASS billing.test.ts > case_454 (3ms)
+  [db] pool conn=4 query=7ms rows=36
+PASS search.test.ts > case_455 (26ms)
+  [db] pool conn=15 query=2ms rows=0
+PASS profile.test.ts > case_456 (25ms)
+  [db] pool conn=20 query=3ms rows=30
+  [http] GET /v1/profile/789 200 54ms
+PASS admin.test.ts > case_457 (36ms)
+  [db] pool conn=4 query=2ms rows=41
+PASS notify.test.ts > case_458 (31ms)
+  [db] pool conn=7 query=3ms rows=40
+PASS audit.test.ts > case_459 (1ms)
+  [db] pool conn=14 query=1ms rows=0
+  [http] GET /v1/audit/701 200 87ms
+PASS auth.test.ts > case_460 (8ms)
+  [db] pool conn=3 query=4ms rows=7
+PASS session.test.ts > case_461 (9ms)
+  [db] pool conn=16 query=1ms rows=17
+PASS users.test.ts > case_462 (37ms)
+  [db] pool conn=8 query=8ms rows=46
+  [http] GET /v1/users/763 200 25ms
+PASS orders.test.ts > case_463 (4ms)
+  [db] pool conn=12 query=3ms rows=46
+PASS billing.test.ts > case_464 (6ms)
+  [db] pool conn=10 query=9ms rows=45
+PASS search.test.ts > case_465 (32ms)
+  [db] pool conn=15 query=5ms rows=3
+  [http] GET /v1/search/735 200 6ms
+PASS profile.test.ts > case_466 (1ms)
+  [db] pool conn=2 query=1ms rows=41
+PASS admin.test.ts > case_467 (40ms)
+  [db] pool conn=3 query=7ms rows=19
+PASS notify.test.ts > case_468 (20ms)
+  [db] pool conn=20 query=3ms rows=31
+  [http] GET /v1/notify/624 200 9ms
+PASS audit.test.ts > case_469 (21ms)
+  [db] pool conn=12 query=8ms rows=30
+PASS auth.test.ts > case_470 (11ms)
+  [db] pool conn=5 query=2ms rows=23
+PASS session.test.ts > case_471 (11ms)
+  [db] pool conn=14 query=8ms rows=24
+  [http] GET /v1/session/797 200 59ms
+PASS users.test.ts > case_472 (18ms)
+  [db] pool conn=19 query=6ms rows=18
+PASS orders.test.ts > case_473 (18ms)
+  [db] pool conn=2 query=6ms rows=38
+PASS billing.test.ts > case_474 (1ms)
+  [db] pool conn=5 query=5ms rows=37
+  [http] GET /v1/billing/439 200 33ms
+PASS search.test.ts > case_475 (25ms)
+  [db] pool conn=13 query=7ms rows=38
+PASS profile.test.ts > case_476 (15ms)
+  [db] pool conn=15 query=5ms rows=44
+PASS admin.test.ts > case_477 (1ms)
+  [db] pool conn=11 query=5ms rows=17
+  [http] GET /v1/admin/433 200 22ms
+PASS notify.test.ts > case_478 (38ms)
+  [db] pool conn=2 query=5ms rows=9
+PASS audit.test.ts > case_479 (37ms)
+  [db] pool conn=5 query=5ms rows=35
+Tests: 3 failed, 480 passed, 483 total

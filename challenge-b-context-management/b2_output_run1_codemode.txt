@@ -1,0 +1,71 @@
+Logs: 10 files x 400 lines = 296,566 bytes on disk
+Q: Trong toàn bộ các file log, 5 endpoint nào có nhiều response status 500 nhất? Trả lời bằng bảng: endpoint | số lần 500, sắp xếp giảm dần.
+Ground truth: [('/v1/payments', 42), ('/v1/orders', 42), ('/v1/auth/refresh', 42), ('/v1/search', 22), ('/v1/inventory', 19)]
+
+==========================================================================================
+MODE: codemode
+   [llm] codemode    minimax-m3.1-flash:free      input=    617  output=  310
+   [tool] run_code({"code": " import glob, re, collections  files = sorted(glob.glob('*.log')) counts = colle...) -> 253 chars
+          FILES: 10
+          LINES: 4000 PARSED: 4000
+          TOTAL 500: 190
+          DISTINCT ENDPOINTS with 500: 12
+          ---
+          /v1/payments | 42
+          /v1/orders | 42
+          /v1/auth/refresh | 42
+          /v1/search | 22
+          /v1/inventory | 19
+          /v1/users | 5
+          /v1/cart | 5
+          /v1/shipping | 4
+          /v1/coupons | 4
+          /v1/reviews | 2
+   [llm] codemode    minimax-m3.1-flash:free      input=  1,061  output=  390
+   [tool] run_code({"code": " import glob, re, collections files = sorted(glob.glob('*.log')) # cross-check w...) -> 241 chars
+          unparsed lines: 0
+          strict total: 190
+          /v1/payments | 42
+          /v1/orders | 42
+          /v1/auth/refresh | 42
+          /v1/search | 22
+          /v1/inventory | 19
+          /v1/users | 5
+          /v1/cart | 5
+          /v1/shipping | 4
+          /v1/coupons | 4
+          /v1/reviews | 2
+          /v1/profile | 2
+          /v1/notifications | 1
+   [llm] codemode    minimax-m3.1-flash:free      input=  1,451  output=  570
+--- AGENT:
+## Kết quả phân tích
+
+**Phạm vi:** 10 file `*.log`, tổng 4.000 dòng log — 100% dòng đều khớp định dạng chuẩn (`timestamp LEVEL METHOD path status ...`), không có dòng nào bỏ sót. Tổng số lỗi `500` trong toàn bộ tập log: **190** (12 endpoint khác nhau).
+
+### Top 5 endpoint có nhiều lỗi 500 nhất
+
+| # | Endpoint | Số lần 500 |
+|---|----------|------------:|
+| 1 | /v1/payments | 42 |
+| 2 | /v1/orders | 42 |
+| 3 | /v1/auth/refresh | 42 |
+| 4 | /v1/search | 22 |
+| 5 | /v1/inventory | 19 |
+
+### Nhận xét
+- Ba endpoint dẫn đầu **bằng nhau** với 42 lỗi 500 mỗi endpoint (tổng 126/190 = 66% toàn bộ lỗi 500), thuộc nhóm nghiệp vụ then chốt (thanh toán, đặt hàng, làm mới token xác thực).
+- `/v1/search` và `/v1/inventory` theo sau khá xa (22 và 19).
+- Phần còn lại rất nhỏ: `/v1/users` 5, `/v1/cart` 5, `/v1/shipping` 4, `/v1/coupons` 4, `/v1/reviews` 2, `/v1/profile` 2, `/v1/notifications` 1.
+
+Vì 3 endpoint trên cùng có số lần bằng nhau, thứ tạng giữa chúng được sắp xếp theo giảm dần tần suất xuất hiện trong log.
+    #  label       input tokens  output
+    1  codemode             617     310
+    2  codemode           1,061     390
+    3  codemode           1,451     570
+   total input = 3,129 | peak input = 1,451
+
+==========================================================================================
+COMPARISON  (raw logs on disk: 296,566 bytes)
+   mode       requests  total input tok  peak input tok  tool->LLM chars  top-5 correct
+   codemode          3            3,129           1,451              494            5/5

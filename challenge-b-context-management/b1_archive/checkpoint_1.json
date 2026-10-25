@@ -1,0 +1,22 @@
+{
+  "goal": "Increase TOKEN_TTL in session.ts from 900 to 3600 and run tests to see if token expiration timing is causing the race condition failures",
+  "current_state": "Three tests failing due to race conditions in refreshToken rotation. User suspects token TTL (900 seconds) may be too short causing premature expiration during concurrent requests. Need to modify TOKEN_TTL constant and re-run tests.",
+  "constraints": [
+    "giữ API backward compatible (không đổi chữ ký các hàm export)"
+  ],
+  "findings": [
+    "3 tests fail: concurrent refresh creates duplicate tokens, old token not rejected after rotation, concurrent rotation creates multiple session rows",
+    "Root cause appears to be race condition in refreshToken() - no atomic transaction with row locking",
+    "TOKEN_TTL currently 900 seconds (15 minutes) in session.ts"
+  ],
+  "failed_attempts": [
+    "Ran test suite initially - 3 failures confirmed"
+  ],
+  "files": [
+    "session.ts",
+    "auth.ts",
+    "auth.test.ts",
+    "db.ts"
+  ],
+  "next_action": "Read session.ts to get exact current content, then edit TOKEN_TTL from 900 to 3600, then run tests again"
+}

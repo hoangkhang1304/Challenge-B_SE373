@@ -1,0 +1,81 @@
+Logs: 10 files x 400 lines = 296,566 bytes on disk
+Q: Trong toàn bộ các file log, 5 endpoint nào có nhiều response status 500 nhất? Trả lời bằng bảng: endpoint | số lần 500, sắp xếp giảm dần.
+Ground truth: [('/v1/payments', 42), ('/v1/orders', 42), ('/v1/auth/refresh', 42), ('/v1/search', 22), ('/v1/inventory', 19)]
+
+==========================================================================================
+MODE: native
+   [llm] native      minimax-m3.1-flash:free      input=    614  output=   30
+   [tool] list_files({}) -> 299 chars
+   [llm] native      minimax-m3.1-flash:free      input=    759  output=  166
+   [tool] read_file({"name": "api-node01.log"}) -> 29,126 chars
+   [tool] read_file({"name": "api-node02.log"}) -> 29,183 chars
+   [tool] read_file({"name": "api-node03.log"}) -> 29,213 chars
+   [tool] read_file({"name": "api-node04.log"}) -> 29,238 chars
+   [tool] read_file({"name": "api-node05.log"}) -> 29,288 chars
+   [llm] retry 1: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by ConnectTimeoutError(<HTTPSConnection(hos
+   [llm] native      minimax-m3.1-flash:free      input= 71,919  output=2,942
+   [tool] read_file({"name": "api-node06.log"}) -> 29,222 chars
+   [tool] read_file({"name": "api-node07.log"}) -> 29,281 chars
+   [tool] read_file({"name": "api-node08.log"}) -> 29,227 chars
+   [tool] read_file({"name": "api-node09.log"}) -> 29,260 chars
+   [tool] read_file({"name": "api-node10.log"}) -> 29,528 chars
+   [llm] native      minimax-m3.1-flash:free      input=143,051  output=14,992
+--- AGENT:
+## Kết quả: 5 endpoint có nhiều lỗi 500 nhất
+
+| # | Endpoint | Số lần 500 |
+|---|----------|------------:|
+| 1 | /v1/orders | 42 |
+| 2 | /v1/auth/refresh | 42 |
+| 3 | /v1/payments | 42 |
+| 4 | /v1/search | 22 |
+| 5 | /v1/inventory | 19 |
+
+### Chi tiết phân rã theo method
+
+| Endpoint | GET 500 | POST 500 | Tổng |
+|----------|---------:|---------:|-----:|
+| /v1/orders | 22 | 20 | 42 |
+| /v1/auth/refresh | 21 | 21 | 42 |
+| /v1/payments | 22 | 20 | 42 |
+| /v1/search | 17 | 5 | 22 |
+| /v1/inventory | 10 | 9 | 19 |
+
+### Ghi chú
+- Tổng số log có status 500 trong 10 file: **190** dòng (đã loại các dòng `INFO/WARN ... 500ms` — ở đó 500 là *thời gian đáp ứng*, không phải status).
+- Ba endpoint `/v1/orders`, `/v1/auth/refresh`, `/v1/payments` bị **hòa điểm** ở 42 lần — thứ tự trong bảng là thứ tự phát hiện, không có sự khác biệt về số lượng.
+- Các endpoint còn lại có số 500 ít hơn nhiều: `/v1/users` (5), `/v1/cart` (5), `/v1/shipping` (4), `/v1/coupons` (4), `/v1/reviews` (2), `/v1/profile` (2), `/v1/notifications` (1) — nên thứ hạng 5 là chắc chắn, không bị tranh chấp.
+    #  label       input tokens  output
+    1  native               614      30
+    2  native               759     166
+    3  native            71,919   2,942
+    4  native           143,051  14,992
+   total input = 216,343 | peak input = 143,051
+
+==========================================================================================
+MODE: codemode
+   [llm] codemode    minimax-m3.1-flash:free      input=    617  output=  157
+   [tool] run_code({"code": " import glob, re, collections files = sorted(glob.glob('*.log')) print(files) cn...) -> 186 chars
+   [llm] codemode    minimax-m3.1-flash:free      input=    844  output=  230
+   [tool] run_code({"code": " import glob, collections files = sorted(glob.glob('*.log')) shape = collections...) -> 36 chars
+   [llm] codemode    minimax-m3.1-flash:free      input=  1,017  output=  365
+   [tool] run_code({"code": " import glob, collections files = sorted(glob.glob('*.log')) shape = collections...) -> 668 chars
+   [llm] codemode    minimax-m3.1-flash:free      input=  1,492  output=  321
+   [tool] run_code({"code": " import glob, collections files = sorted(glob.glob('*.log')) idx3 = collections....) -> 428 chars
+   [llm] codemode    minimax-m3.1-flash:free      input=  1,857  output=  276
+   [tool] run_code({"code": " import glob, collections files = sorted(glob.glob('*.log')) cnt = collections.C...) -> 244 chars
+--- AGENT:
+(max_steps reached)
+    #  label       input tokens  output
+    1  codemode             617     157
+    2  codemode             844     230
+    3  codemode           1,017     365
+    4  codemode           1,492     321
+    5  codemode           1,857     276
+   total input = 5,827 | peak input = 1,857
+
+==========================================================================================
+COMPARISON  (raw logs on disk: 296,566 bytes)
+   mode       requests  total input tok  peak input tok  tool->LLM chars  top-5 correct
+   native            4          216,343         143,051          292,865            5/5
+   codemode          5            5,827           1,857            1,562            0/5

@@ -1,0 +1,105 @@
+Logs: 10 files x 400 lines = 296,566 bytes on disk
+Q: Trong toàn bộ các file log, 5 endpoint nào có nhiều response status 500 nhất? Endpoint là path (vd /v1/orders), gộp mọi HTTP method. Trả lời bằng bảng: endpoint | số lần 500, sắp xếp giảm dần.
+Ground truth: [('/v1/payments', 42), ('/v1/orders', 42), ('/v1/auth/refresh', 42), ('/v1/search', 22), ('/v1/inventory', 19)]
+
+==========================================================================================
+MODE: native
+   [llm] native      nemotron-3-ultra-550b-a55b:free input=    460  output=  102
+   [tool] list_files({}) -> 299 chars
+          api-node01.log (29,526 bytes)
+          api-node02.log (29,583 bytes)
+          api-node03.log (29,613 bytes)
+          api-node04.log (29,638 bytes)
+          api-node05.log (29,688 bytes)
+          api-node06.log (29,622 bytes)
+          api-node07.log (29,681 bytes)
+          api-node08.log (29,627 bytes)
+          api-node09.log (29,660 bytes)
+          api-node10.log (29,928 bytes)
+   [llm] native      nemotron-3-ultra-550b-a55b:free input=    630  output=  168
+   [tool] read_file({"name": "api-node01.log"}) -> 29,126 chars
+   [tool] read_file({"name": "api-node02.log"}) -> 29,183 chars
+   [tool] read_file({"name": "api-node03.log"}) -> 29,213 chars
+   [tool] read_file({"name": "api-node04.log"}) -> 29,238 chars
+   [tool] read_file({"name": "api-node05.log"}) -> 29,288 chars
+   [llm] native      nemotron-3-ultra-550b-a55b:free input= 98,662  output=  190
+   [tool] read_file({"name": "api-node06.log"}) -> 29,222 chars
+   [tool] read_file({"name": "api-node07.log"}) -> 29,281 chars
+   [tool] read_file({"name": "api-node08.log"}) -> 29,227 chars
+   [tool] read_file({"name": "api-node09.log"}) -> 29,260 chars
+   [tool] read_file({"name": "api-node10.log"}) -> 29,528 chars
+   [llm] native      nemotron-3-ultra-550b-a55b:free input=197,196  output=13,513
+--- AGENT:
+Dựa trên việc phân tích toàn bộ 10 file log, đây là 5 endpoint có nhiều response status 500 nhất (gộp tất cả HTTP method):
+
+| endpoint | số lần 500 |
+|----------|------------|
+| /v1/orders | 42 |
+| /v1/payments | 36 |
+| /v1/auth/refresh | 34 |
+| /v1/inventory | 20 |
+| /v1/search | 20 |
+
+*Lưu ý: /v1/inventory và /v1/search cùng có 20 lần lỗi 500, đứng chung thứ 4-5.*
+    #  label       input tokens  output
+    1  native               460     102
+    2  native               630     168
+    3  native            98,662     190
+    4  native           197,196  13,513
+   total input = 296,948 | peak input = 197,196
+
+==========================================================================================
+MODE: codemode
+   [llm] codemode    nemotron-3-ultra-550b-a55b:free input=    477  output=  397
+          --- script ---
+          import glob
+          import os
+          from collections import Counter
+          
+          counts = Counter()
+          for filepath in glob.glob('*.log'):
+              with open(filepath, 'r') as f:
+                  for line in f:
+                      parts = line.strip().split()
+                      if len(parts) >= 5:
+                          status = parts[4]
+                          if status == '500':
+                              endpoint = parts[3]
+                              counts[endpoint] += 1
+          
+          top5 = counts.most_common(5)
+          print("endpoint | số lần 500")
+          print("--- | ---")
+          for endpoint, cnt in top5:
+              print(f"{endpoint} | {cnt}")
+   [tool] run_code({"code": "import glob import os from collections import Counter  counts = Counter() for fi...) -> 123 chars
+          endpoint | số lần 500
+          --- | ---
+          /v1/payments | 42
+          /v1/orders | 42
+          /v1/auth/refresh | 42
+          /v1/search | 22
+          /v1/inventory | 19
+   [llm] codemode    nemotron-3-ultra-550b-a55b:free input=    714  output=  217
+--- AGENT:
+**Top 5 endpoint có nhiều response 500 nhất:**
+
+| endpoint | số lần 500 |
+|---|---|
+| /v1/payments | 42 |
+| /v1/orders | 42 |
+| /v1/auth/refresh | 42 |
+| /v1/search | 22 |
+| /v1/inventory | 19 |
+
+*Lưu ý: 3 endpoint đầu cùng đứng top với 42 lần.*
+    #  label       input tokens  output
+    1  codemode             477     397
+    2  codemode             714     217
+   total input = 1,191 | peak input = 714
+
+==========================================================================================
+COMPARISON  (raw logs on disk: 296,566 bytes)
+   mode       requests  total input tok  peak input tok  tool->LLM chars  top-5 correct
+   native            4          296,948         197,196          292,865            1/5
+   codemode          2            1,191             714              123            5/5
